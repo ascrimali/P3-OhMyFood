@@ -69,7 +69,6 @@ main{
 .menu{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     background-color: white;
     margin-top: 240px;
@@ -85,7 +84,6 @@ main{
     width: 450px;
     height: 100px;
 
-
     .nomRestaurant{
         margin-left: 25px;
     }
@@ -99,24 +97,25 @@ main{
 .tousCarte{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 1050px;
 }
 
 .carte{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 450px;
-    height: 330px;
 
     .type{
         font-size: 1.3em;
         width: 55px;
-        padding-bottom: 3px;
+        padding-bottom: 5px;
         margin-right: 350px;
+        margin-bottom: 16px;
         border-bottom: 4px solid #99E2D0;
+    }
+
+    .type2{
+        margin-top: 20px;
     }
 
     .commande{
@@ -128,7 +127,7 @@ main{
         background-color: white;
         box-shadow: 0px 3px 5px #ebebeb;
         border-radius: 17px;
-
+        margin-bottom: 16px;
 
         .plat{
             font-weight: bold;
@@ -164,6 +163,7 @@ main{
     align-items: center;
     height: 120px;
     margin-bottom: 70px;
+    margin-top: 15px;
 }
 
 .commanderBTN{
