@@ -17,14 +17,14 @@ body{
     font-family: 'Roboto';
     animation: scrolling 3s;
 
-    @keyframes scrolling{
+    /*@keyframes scrolling{
         0% { overflow: hidden;}
         100% { overflow: hidden;}
-    }
+    }*/
 }
 
 
-@mixin carréTaille {
+/*@mixin carréTaille {
     width: 20px;
     height: 20px;
 }
@@ -342,7 +342,7 @@ body{
         0% { opacity: 0.2; z-index: 1;}
         100% { opacity: 0.2; z-index: 1;}
     }
-}
+}*/
 
 img{
     object-fit: cover;
@@ -370,7 +370,7 @@ img{
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
-    width: 450px;
+    width: 1400px;
     height: 55px;
 
 
@@ -386,6 +386,7 @@ img{
     align-items: center;
     background-color: #f6f6f6;
     height: 350px;
+
 
     .explorerTitre{
         display: flex;
@@ -416,20 +417,21 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
-    height: 500px;
+    width: 1400px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .fonctionnementTitre{
-    height: 60px;
+    font-size: 2em;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .fonctionnementTous{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    height: 350px;
 }
 
 .fonctionnementCarte{
@@ -488,24 +490,31 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #f6f6f6;
-    height: 1360px;
 }
 
 .restaurantTitre{
-    font-size: 1.6em;
+    font-size: 2em;
     width: 200px;
     margin-left: 20px;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .restaurantTous{
     display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 1200px;
+}
+
+.colone{
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    height: 1200px;
+    height: 650px;
+    margin-bottom: 30px;
 }
 
 .restaurantCarte{
@@ -607,29 +616,28 @@ img{
 
 footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     background-color: #353535;
     color: white;
-    width: 450px;
-    height: 240px;
+    width: 1400px;
+    height: 200px;
 }
 
 .footerLogo{
     filter: invert(100%);
-    margin-left: 30px;
+    margin-left: 1250px;
+    margin-top: 100px;
     width: 120px;
 }
 
 .footerTous{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.3em;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    height: 130px;
+    height: 30px;
     text-decoration: none;
+    width: 1400px;
 
     .footerRestaurant{
         display: flex;
@@ -663,3 +671,85 @@ footer{
     }
 }
 
+@media screen and (max-width: 800px){
+
+    .localisation{
+        width: 450px;
+    }
+
+    .explorer{
+        width: 450px;
+
+    }
+
+    .fonctionnement{
+        width: 450px;
+
+    }
+
+    .fonctionnementTitre{
+        font-size: 1.6em;
+    }
+
+    .fonctionnementTous{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 350px;
+    }
+
+    .colone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 650px;
+        margin-bottom: 30px;
+    }
+
+    .restaurant{
+        height: 1360px;
+    }
+
+    .restaurantTitre{
+        font-size: 1.5em;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 200px;
+    }
+
+    .restaurantTous{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 1250px;
+        width: 450px;
+    }
+
+    .colone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 750px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        width: 450px;
+        height: 240px;
+    }
+
+    .footerLogo{
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+
+    .footerTous{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        height: 130px;
+        text-decoration: none;
+        width: 450px;
+    }
+}
