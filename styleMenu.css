@@ -34,14 +34,15 @@ img {
 }
 
 header {
-  width: 450px;
+  width: 1400px;
 }
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  width: 450px;
+  width: 1400px;
   height: 80px;
+  background-color: white;
+  z-index: 1;
 }
 .navigation .retour {
   display: flex;
@@ -52,15 +53,19 @@ header {
 .navigation .headerLogo {
   object-fit: contain;
   width: 200px;
-  margin-right: 120px;
+  margin-left: 550px;
 }
 
 main {
-  width: 450px;
+  display: flex;
+  justify-content: center;
+  width: 1400px;
 }
 
 .mainImage {
-  width: 450px;
+  width: 900px;
+  height: 700px;
+  top: -17%;
   position: absolute;
   z-index: -1;
 }
@@ -70,8 +75,8 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  margin-top: 240px;
-  width: 450px;
+  margin-top: 450px;
+  width: 1400px;
   border-radius: 35px 35px 0px 0px;
   background-color: #f6f6f6;
 }
@@ -80,7 +85,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 450px;
+  width: 1400px;
   height: 100px;
 }
 .titreRestaurant .nomRestaurant {
@@ -168,7 +173,6 @@ main {
 
 .tousCarte {
   display: flex;
-  flex-direction: column;
 }
 
 .carte {
@@ -184,9 +188,6 @@ main {
   margin-right: 350px;
   margin-bottom: 16px;
   border-bottom: 4px solid #99E2D0;
-}
-.carte .type2 {
-  margin-top: 20px;
 }
 .carte .commande {
   display: flex;
@@ -361,33 +362,33 @@ main {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-evenly;
   background-color: #353535;
   color: white;
-  width: 450px;
-  height: 240px;
+  width: 1400px;
+  height: 200px;
 }
 
 .footerLogo {
   filter: invert(100%);
-  margin-left: 20px;
+  margin-left: 1250px;
+  margin-top: 100px;
   width: 120px;
 }
 
 .footerTous {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 1.3em;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  height: 130px;
+  height: 30px;
+  text-decoration: none;
+  width: 1400px;
 }
 .footerTous .footerRestaurant {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 240px;
 }
 .footerTous .footerRestaurant .footerRestaurantIcon {
   display: flex;
@@ -395,16 +396,73 @@ footer {
   align-items: center;
   font-size: 17px;
 }
+.footerTous .contact {
+  text-decoration: none;
+  color: white;
+}
 .footerTous .footerPartenaire {
   display: flex;
   justify-content: space-between;
-  width: 206px;
+  width: 197px;
 }
 .footerTous .footerPartenaire .footerPartenaireIcon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  header {
+    width: 450px;
+  }
+  .navigation {
+    justify-content: space-between;
+    width: 450px;
+  }
+  .navigation .headerLogo {
+    margin-right: 120px;
+    margin-left: 0px;
+  }
+  main {
+    width: 450px;
+  }
+  .mainImage {
+    width: 450px;
+    height: 400px;
+    top: -5%;
+  }
+  .menu {
+    margin-top: 240px;
+    width: 450px;
+  }
+  .titreRestaurant {
+    width: 450px;
+  }
+  .tousCarte {
+    flex-direction: column;
+  }
+  .type2 {
+    margin-top: 20px;
+  }
+  footer {
+    flex-direction: column;
+    width: 450px;
+    height: 240px;
+  }
+  .footerLogo {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  .footerTous {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    height: 130px;
+    text-decoration: none;
+    width: 450px;
+  }
 }
 
 /*# sourceMappingURL=styleMenu.css.map */
