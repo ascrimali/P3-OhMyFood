@@ -112,7 +112,7 @@ main{
             font-size: 25px;
             opacity: 0;
             background: -webkit-linear-gradient(172deg,#FF79DA, #9356DC );
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         
             &:hover{
@@ -236,7 +236,6 @@ main{
                     overflow: hidden;
                     text-overflow: ellipsis;
                     font-size: 1.05em;
-
                 }
             }
 
@@ -270,7 +269,7 @@ main{
 
 
 
-#commande1{
+.commande1{
     opacity: 0;
     animation: apparitionco1 2s;
     animation-fill-mode: forwards;
@@ -281,7 +280,7 @@ main{
     }
 }
 
-#commande2{
+.commande2{
     opacity: 0;
     animation: apparitionco2 2s;
     animation-fill-mode: forwards;
@@ -293,7 +292,7 @@ main{
     }
 }
 
-#commande3{
+.commande3{
     opacity: 0;
     animation: apparitionco3 2s;
     animation-fill-mode: forwards;
@@ -305,7 +304,7 @@ main{
     }
 }
 
-#commande4{
+.commande4{
     opacity: 0;
     animation: apparitionco4 2s;
     animation-fill-mode: forwards;
