@@ -104,9 +104,10 @@ main {
   position: absolute;
   z-index: 2;
   font-size: 25px;
-  color: #9356DC;
   opacity: 0;
-  border: solid;
+  background: -webkit-linear-gradient(172deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .titreRestaurant .coeur .coeurPlein:hover {
   animation-fill-mode: forwards;
@@ -151,6 +152,7 @@ main {
 .titreRestaurant .coeur .coeurPlein:hover + .coeurVide {
   animation-duration: 2s;
   animation-name: animCoeurEf;
+  animation-fill-mode: forwards;
 }
 @keyframes animCoeurEf {
   0% {
