@@ -112,7 +112,7 @@ main{
             font-size: 25px;
             opacity: 0;
             background: -webkit-linear-gradient(172deg,#FF79DA, #9356DC );
-            background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         
             &:hover{

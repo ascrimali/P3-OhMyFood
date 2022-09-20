@@ -922,6 +922,9 @@ img {
   font-size: 25px;
   color: #9356DC;
   opacity: 0;
+  background: -webkit-linear-gradient(172deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurantCarte .restaurantInfo .coeur .coeurPlein:hover {
   animation-fill-mode: forwards;
@@ -966,6 +969,7 @@ img {
 .restaurantCarte .restaurantInfo .coeur .coeurPlein:hover + .coeurVide {
   animation-duration: 2s;
   animation-name: animCoeurEf;
+  animation-fill-mode: forwards;
 }
 @keyframes animCoeurEf {
   0% {
