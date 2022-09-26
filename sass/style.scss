@@ -526,6 +526,23 @@ img{
     border-radius: 17px 17px 17px 17px;
     box-shadow: 0px 3px 5px #ebebeb;
 
+    .nouveau{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 37px;
+        background-color: #99E2D0;
+        color: green;
+        font-weight: bold;
+        font-size: 1.1em;
+        border-radius: 3px;
+        margin-left: 275px;
+        margin-top: 18px;
+        z-index: 100;
+        position: absolute;
+    }
+
     .restaurantIMG{
         width: 400px;
         height: 200px;
